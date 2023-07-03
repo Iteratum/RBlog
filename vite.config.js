@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@headlessui/react'],
+      external: ['@headlessui/react', 'react-router-dom'],
     }
   }
 })
