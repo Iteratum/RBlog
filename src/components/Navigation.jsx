@@ -26,17 +26,17 @@ export const Navigation = () => {
 }
 */
 
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
-  { name: 'BlogHost', href: '/BlogHost', current: false },
-  { name: 'Pricing', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Feature', href: '#', current: false },
+  { name: 'BlogHost', href: '/BlogHost', current: true },
+  { name: 'Pricing', href: '/Pricing', current: false },
+  { name: 'Contact', href: '/Contact', current: false },
+  { name: 'Feature', href: '/Feature', current: false },
 ]
 
 function classNames(...classes) {
@@ -65,21 +65,24 @@ export const Navigation = () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
+                  <nav>
+                    <div className="flex space-x-4">
+                      {navigation.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className={classNames(
+                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                            'rounded-md px-3 py-2 text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </nav>
+                  
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -87,7 +90,6 @@ export const Navigation = () => {
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  <span className="sr-only">View notifications</span>
                   <img
                         className="h-8 w-8 rounded-full"
                         src="src\assets\Images\pg-launchOdbcDocs.ico"
