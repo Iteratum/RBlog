@@ -39,13 +39,13 @@ export const Card = () => {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h3 className="mt-6 text-sm text-gray-500">
+                <h3 className="mt-6 text-sm md:text-base lg:text-lg text-gray-800">
                   <a href={callout.href}>
                     <span className="absolute inset-0" />
                     {callout.name}
                   </a>
                 </h3>
-                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                <p className="text-base md:text-xl lg:text-2xl font-semibold text-gray-900">{callout.description}</p>
               </div>
             ))}
           </div>
