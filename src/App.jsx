@@ -1,9 +1,9 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import { BlogHost } from './components/BlogHost'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "../node_modules/react-router-dom/"
 import { Contact } from './components/Contact'
 import { Feature } from './components/Feature'
 import { Navigation } from './components/Navigation'
 import { Pricing } from './components/Pricing'
+import { BlogHost } from "./components/BlogHost"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
