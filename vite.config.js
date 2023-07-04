@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@headlessui/react', '@heroicons/react/24/outline'],
+      external: [],
     }
   }
 })
