@@ -15,7 +15,7 @@ const App = () => {
         <Navigation />
         <div>
         <Routes>
-          <Route path="/BlogHost" element={<BlogHost />} />
+          <Route path="/" element={<BlogHost />} />
           <Route path="/Feature" element={<Feature />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
