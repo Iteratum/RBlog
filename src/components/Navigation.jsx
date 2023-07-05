@@ -92,7 +92,7 @@ export const Navigation = () => {
                 >
                   <img
                         className="h-8 w-8 rounded-full"
-                        src="src\assets\Images\pg-launchOdbcDocs.ico"
+                        src="\pg-launchOdbcDocs.ico"
                         alt=""
                       />
                 </button>
@@ -104,8 +104,8 @@ export const Navigation = () => {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="src\assets\Images\me2.jpg"
-                        alt=""
+                        src="\me2.jpg"
+                        alt="my pic"
                       />
                     </Menu.Button>
                   </div>
