@@ -25,24 +25,27 @@ export const Flwpayment = () => {
   };
 
   const handleFlutterPayment = useFlutterwave(config);
+  try {
+    return (
+      <div className="App">
 
-  return (
-    <div className="App">
-
-      <button
-        onClick={() => {
-          handleFlutterPayment({
-            callback: (response) => {
-               console.log(response);
-                closePaymentModal() // this will close the modal programmatically
-            },
-            onClose: () => {},
-          });
-        }} className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
-        rounded-md text-black md:w-auto w-full"
-      >
-        Buy me some tea
-      </button>
-    </div>
-  );
+        <button
+          onClick={() => {
+            handleFlutterPayment({
+              callback: (response) => {
+                console.log(response);
+                  closePaymentModal() // this will close the modal programmatically
+              },
+              onClose: () => {},
+            });
+          }} className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
+          rounded-md text-black md:w-auto w-full"
+        >
+          Buy me some tea
+        </button>
+      </div>
+    );
+  } catch (error) {
+    <p>{error}</p>
+  }
 }
