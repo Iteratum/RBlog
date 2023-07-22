@@ -1,6 +1,5 @@
 import { Card } from '../assets/peripherals/Card'
 import { CardSmall } from '../assets/peripherals/CardSmall'
-import { Flwpayment } from '../assets/peripherals/Flwpayment'
 export const BlogHost = () => {
   return (
     <div className=' bg-gray-400'>
@@ -14,7 +13,6 @@ export const BlogHost = () => {
       <section>
         <Card />
         <CardSmall />
-        <Flwpayment />
       </section>
     </div>
   )
