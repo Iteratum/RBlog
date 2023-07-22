@@ -1,4 +1,3 @@
-import React from "react";
 
 const Item = ({ Links, title }) => {
   return (
@@ -8,7 +7,7 @@ const Item = ({ Links, title }) => {
         <li key={link.name}>
           <a
             className="text-gray-900 hover:text-teal-400 duration-300
-          text-sm md:text-base lg:text-lg cursor-pointer leading-6"
+          text-lg md:text-xl lg:text-2xl cursor-pointer leading-6"
             href={link.link}
           >
             {link.name}
