@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-const baseURL = 'https://testapp1-7tdo.onrender.com/BlogHost'
+const baseURL = 'https://testapp1-7tdo.onrender.com/BlogHost/'
 
 export const Card = () => {
   const [posts, setPosts] = useState([])
