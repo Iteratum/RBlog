@@ -28,7 +28,7 @@ export const Card = () => {
                 <div key={post.title} className="group relative bg-gray-100 flex-wrap pb-3 rounded-lg">
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-cyan-800 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                     <img
-                      src={`https://testapp1-7tdo.onrender.com${post.image}`}
+                      src={https://testapp1-7tdo.onrender.com`${post.image}`}
                       alt={post.title}
                       className="h-full w-full object-cover object-center"
                     />
